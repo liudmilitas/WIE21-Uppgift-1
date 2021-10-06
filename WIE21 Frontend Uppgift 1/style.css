@@ -1,0 +1,296 @@
+/*
+1. the REM-units are used througout the document in order to keep the page responsive
+2. 3 different media-queries were created for different screen sizes
+*/
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #43454B;
+    background-color: #ffffff;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/header.png.png);
+    min-height: 42rem;
+    max-height: 48rem;
+    width: 100%;
+    max-width: 1200px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+
+h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.title {
+    text-align: right;
+    padding: 1rem;
+}
+
+header p {
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.text-1 {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+    max-width: 50rem;
+}
+
+.text-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+    max-width: 50rem;
+}
+
+.text-3 {
+    padding: 0;
+    width: 90%;
+    max-width: 50rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 60rem;
+}
+
+.text-tip {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    background-image: url(images/Q1_newsletter-02.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow: visible;
+    min-height: 20rem;
+    width: 100%;
+}
+
+.text-tip p {
+    margin-bottom: 2rem;
+    max-width: 50rem;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: -3;
+    color: whitesmoke;
+    background-color: #2C2E35;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 16.5rem;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.footer-section-1 {
+    text-align: left;
+    margin-right: 3rem;
+}
+
+.footer-section-2 {
+    text-align: right;
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        background-image: none;
+        height: 15rem;
+        min-height: fit-content;
+        max-width: fit-content;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .small-header {
+        max-width: 330px;
+    }
+
+    .title {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    header p {
+        text-align: center;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+
+    .text-2 img {
+        display: none;
+    }
+
+    .text-1 img {
+        display: none;
+    }
+
+    .text-1 p {
+        width: 95%;
+    }
+
+    .text-2 p {
+        width: 95%;
+    }
+
+    .text-3 p {
+        width: 95%;
+    }
+
+    .text-tip {
+        min-height: 25rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-section-1 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-section-2 {
+        text-align: center;
+    }
+
+    footer section {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        background-image: none;
+        height: 15rem;
+        min-height: fit-content;
+        max-width: fit-content;
+    }
+
+    .small-header {
+        max-width: 330px;
+    }
+
+    .body {
+        font-size: 14px;
+    }
+
+    .title {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .text-2 img {
+        display: none;
+    }
+
+    .text-1 img {
+        display: none;
+    }
+
+    .text-1 p {
+        width: 95%;
+    }
+
+    .text-2 p {
+        width: 95%;
+    }
+
+    .text-3 p {
+        width: 95%;
+    }
+
+    .text-tip {
+        min-height: 25rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-section-1 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-section-2 {
+        text-align: center;
+    }
+
+    footer section {
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .small-header {
+        display: none;
+    }
+
+    h2 {
+        padding-right: 3rem;
+    }
+
+    .text-tip {
+        background-size: contain;
+    }
+}

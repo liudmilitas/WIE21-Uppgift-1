@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--confifuring view port for all screen sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOODOO - Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--The entire <body> of the document was turned into a flexbox container, in order to fix the footer at the bottom of the page-->
+    <header>
+        <h1>Voodoo</h1>
+        <!--Background image and a smaller logo image version are used interchangably in the header, depending on the screen size-->
+        <img class="small-header" src="images/header.png.png" alt="People networking">
+    </header>
+    <main>
+        <section class="title">
+            <h2>Hey guys,</h2>
+            <p>This week we’ll be discussing the concept of <strong>"Youtubability"</strong> - <br>another important game guideline.</p>
+            <!--The choice was made in the favor of <strong> and <em> elements instead of <b> and <i> elements, because it makes the page more accesible for people using Text-To-Speech (TTS) screen readers-->
+        </section>
+        <section class="text-1">
+            <div class="text-1-paragraph">
+                <h3>Youtubability</h3>
+                <p>A key driver of youtubability is <strong>the clarity of your gameplay</strong> to a potential player.</p>
+                <p>Gameplay clarity will help you achieve the full potential of your game by working on getting <strong>the lowest possible CPIs</strong> for your games.</p>
+                <p>Many elements can be used to make your game clearer:</p>
+                <p>For instance, ask yourself if a user’s interaction with the game is <strong>evident</strong>, for example, can she tell which character she <strong>controls?</strong> Is the <strong>objective clear?</strong> Does it look <strong>fun to play?</strong> Has she understood the game after 1 second (great!) or after 10 seconds (too long!).</p>
+                <p>Make sure to <strong>use colours</strong> to help indicate the gameplay rules. For instance, in Helix Jump, obstacles are <strong>clearly contrasted</strong> (in orange here) and instantly recognized as a threat.</p>
+            </div>
+            <div class="text-1-img">
+                <!--Images were put into individual div-containers in order to facilitate manipulations with Flexbox
+                the images are not displayed on smaller screens, in order to make the page easily readable even on smaller devices-->
+                <img src="images/phone_no1-03.png" alt="Graphic phone screen">
+            </div>
+        </section>
+        <section class="video">
+            <video controls>
+                <source src="images/video_comp.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.  
+                <!--The text that is going to show up if the video doesn't load properly-->       
+            </video>
+        </section>
+        <section class="text-2">
+            <div class="text-2-paragraph">
+                <p>If you want to run user tests with friends and family or even random people in the street, it is interesting to show them the 30 second video before making them try to prototype in order to <strong>understand their</strong> expectations f rom the video vs. the actual game they try.</p>
+                <p><strong>Make it obvious</strong> with visual elements that help <strong>understand the objective and controls</strong> of the game, like with the target used in Viatcheslav Tarasov’s Purple Diver or Fabrika Games’ Draw Car with the space dedicated to drawing.</p>
+            </div>
+            <div class="text-2-img">
+                <img src="images/phone_no2-03.png" alt="Graphic phone screen">
+            </div>
+        </section>
+        <section class="text-3">
+            <p>People will be watching the gameplay videos of your games <strong>on their phone’s Facebook feed</strong>, everything will seem smaller than when displayed in Unity or as a video on your computer screen. <strong>You should also consider whether your gameplay video is understandable if someone watches iton a small screen.</strong> With an average watch time of 3 to 5 seconds, this is an <strong>accelerated elevator pitch!</strong></p>
+            <p>Think of the moment when you decide to click on a random video on YouTube just because it has an attractive thumbnail - it’s the same idea for your game videos.</p>
+        </section>
+        <section class="text-tip">
+            <!-- the background image repeats itself along the X-line depending on the screen size-->
+            <h2>Tip of the week</h2>
+            <p>Livestreams we hold every two weeks are an interesting resource for you to consult. There are plenty of relevant subjects covered to guide and orient you towards best practices and they are <strong>all replayable on the dashboard</strong> so don’t hesitate to check them out!</p>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-section-1">
+            <h3>Livestream</h3>
+            <!--the <br> elements are used in order to recreate the original text formatting-->
+            <p>The next publishing livestream will be held this Thursday (7th November) at 3pm CET (Paris time).<br><br>You’ll receive a reminder e-mail tomorrow.</p>
+        </section>
+        <section class="footer-section-2">
+            <p><em>We look forward to seeing your next prototype!<br><br>The Publishing team</em></p>
+        </section>
+    </footer>
+</body>
+</html>
